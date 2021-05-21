@@ -823,8 +823,8 @@ textarea {
 }
 
 .cards .card3:hover .card3__bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/image/mountains.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/image/mountains.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://vieirahenrique.github.io/showoff/image/mountains.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://vieirahenrique.github.io/showoff/image/mountains.jpg");
   background-size: cover;
 }
 
