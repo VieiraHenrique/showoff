@@ -1,0 +1,111 @@
+.hero {
+  height: calc(90vh - 100px);
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 20px;
+      span {
+        color: $primary;
+      }
+    }
+
+    p {
+      margin: 20px 0;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .btn {
+      margin: 30px auto 0;
+      background: transparent;
+      border: 2px solid $primary;
+      border-radius: 5px;
+      color: #fff;
+      transition: all 0.4s ease-out;
+      position: relative;
+      overflow: hidden;
+      font-weight: 600;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: -185px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: $primary;
+        transition: all 0.4s ease;
+      }
+
+      &:hover {
+        color: $dark-blue;
+        transform: scale(1.1);
+        border: 2px solid transparent;
+      }
+
+      &:hover:before {
+        top: -100px;
+        left: -20px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 1000px;
+    display: none;
+
+    position: relative;
+    .lottie {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__text {
+      margin-top: 0;
+      text-align: left;
+      h2 {
+        font-size: 60px;
+      }
+
+      p {
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .lottie {
+        width: 90%;
+      }
+    }
+  }
+}
