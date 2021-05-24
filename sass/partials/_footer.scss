@@ -1,0 +1,15 @@
+.footer {
+  background: $middle-blue;
+  color: #fff;
+  padding: 70px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contact {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

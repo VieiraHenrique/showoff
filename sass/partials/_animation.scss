@@ -1,0 +1,33 @@
+.animation {
+  position: relative;
+  margin-bottom: 100px;
+  height: 100vh;
+
+  .square {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 600px;
+    height: 600px;
+    border: 20px solid $primary;
+  }
+
+  .square2 {
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    width: 150px;
+    height: 150px;
+    border: 20px solid $secondary;
+  }
+
+  .animTitle {
+    position: absolute;
+    top: 480px;
+    left: 680px;
+    font-size: 80px;
+    color: $secondary;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
